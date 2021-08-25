@@ -55,10 +55,10 @@ a{
 }
 
 /* Header styling */
-
 .header-wrapper{
+    z-index: 100;
     background-color: var(--blue);
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 100%;
@@ -105,6 +105,10 @@ a{
     border: none;
     color: var(--condensed-white);
     font-size: 18px;
+}
+
+.search-field-container input:focus{
+    width: 300px;
 }
 
 .search-list option{
@@ -192,6 +196,7 @@ a{
 
 .menu-body{
     position:absolute;
+    width: 140px;
     top: 40px;
     background-color: var(--light-blue);
     padding: 10px 0;
@@ -231,3 +236,121 @@ a{
         padding: 0 20px;
     }
 }
+/* Header styles end */
+
+
+/* Footer Styling */
+.footer{
+    color: var(--condensed-white);
+}
+
+.footer-container{
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.footer-link-container{
+    flex-wrap: wrap;
+}
+
+.footer-link-items{
+    width: fit-content;
+    margin: 5px 0;
+}
+
+.footer-link-items a{
+    font-size: 14px;
+    color: var(--condensed-white);
+    margin:5px 20px 5px 0;
+}
+
+.footer-link-items a:hover{
+    color: var(--sky-blue);
+}
+
+.footer-note{
+    font-size: 13px;
+    margin: 10px 0 15px 0;
+    line-height: 22px;
+}
+
+.footer-text-content{
+    flex: 5.5;
+}
+
+.footer-extras{
+    flex: 4.5;
+}
+
+.footer-icon-content{
+    flex: 5;
+    padding:0 10%;
+}
+
+.footer-download-content{
+    flex: 5;
+}
+
+.footer-heading{
+    font-size: 15px;
+}
+
+.footer-icon-container{
+    margin-top: 5px;
+}
+
+.footer-icons{
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--light-blue);
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.footer-icons:hover{
+    background-color: var(--sky-blue);
+    cursor: pointer;
+}
+
+.facebook{
+    padding: 10px 16px;
+}
+
+.btn-store{
+    margin-top: 5px;
+}
+
+.btn-app-store{
+    width: 135px;
+    height: 45px;
+    background-color: var(--light-blue);
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-app-store:hover{
+    background-color: var(--sky-blue);
+}
+
+@media screen and (max-width:768px) {
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .btn-store{
+        flex-direction: column
+    }
+
+    .footer-icon-content{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .btn-store{
+        flex-direction: column
+    }
+}
+/* Footer styles end */
