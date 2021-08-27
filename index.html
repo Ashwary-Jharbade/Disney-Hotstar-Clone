@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Disney+ Hotstark</title>
+    <title>Disney+ Hotstar</title>
     <link rel="icon" type="img/ico" href="./assets/img/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -200,7 +200,7 @@
             <div class="header-right-container flex">
               <div class="header-right-control flex">
                 <div class="nav-items lhs-spacer">
-                  <div class="search-field-wrapper flex">
+                  <div class="search-field-wrapper flex"  id="searchBarCover">
                     <div class="search-field-container">
                       <input
                         list="search"
@@ -208,6 +208,8 @@
                         class="f-400"
                         type="search"
                         placeholder="Search"
+                        onclick="borderColorize(1)"
+                        onblur="borderColorize(0)"
                       />
                     </div>
                     <div class="search-icon">
@@ -555,5 +557,6 @@
     <script src="./assets/js/card.js"></script>
     <script src="./assets/js/card-slider.js"></script>
     <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/borderColor.js"></script>
   </body>
 </html>

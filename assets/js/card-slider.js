@@ -25,7 +25,6 @@ function slideLeft (para,num) {
   }
 
   return scrollAmount;
-  console.log("Scroll Amount: ", scrollAmount);
 }
 
 function slideRight(para,num) {

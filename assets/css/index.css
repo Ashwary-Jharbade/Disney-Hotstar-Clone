@@ -377,7 +377,7 @@ a{
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 500ms;
 }
 
 @-webkit-keyframes fade {
@@ -437,10 +437,12 @@ a{
     width: 40%;
     background-color: #030b17;
     color: var(--white);
+    display: flex;
 }
 
 .banner-movie-text{
     margin:80px 50px;
+    align-self: center;
 }
 
 .banner-movie-name{
@@ -450,7 +452,8 @@ a{
 
 .banner-movie-genere{
     margin: 10px 0;
-    font-size: 27px;
+    font-size: 18px;
+    color: var(--condensed-white);
 }
 
 .banner-movie-desc{
@@ -495,7 +498,7 @@ a{
     
     .banner-movie-genere{
         margin: 10px 0;
-        font-size: 25px;
+        font-size: 16px;
     }
     
     .banner-movie-desc{
@@ -522,7 +525,7 @@ a{
     
     .banner-movie-genere{
         margin: 10px 0;
-        font-size: 22px;
+        font-size: 14px;
     }
     
     .banner-movie-desc{
@@ -563,7 +566,7 @@ a{
     
     .banner-movie-genere{
         margin: 5px 0;
-        font-size: 20px;
+        font-size: 14px;
     }
     
     .banner-movie-desc{
@@ -582,11 +585,11 @@ a{
     }
     
     .banner-movie-name{
-        font-size: 13px;
+        font-size: 14px;
     }
     
     .banner-movie-genere{
-        font-size: 14px;
+        font-size: 13px;
     }
     
     .banner-movie-desc{

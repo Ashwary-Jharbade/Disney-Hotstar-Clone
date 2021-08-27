@@ -61,10 +61,6 @@
     border-radius: 5px;
 }
 
-.ellipsis{
-    text-overflow: ellipsis;
-}
-
 .movie-db{
     position: absolute;
     bottom: 0;
@@ -242,4 +238,13 @@
 
 .card-container:last-child{
     margin-right: 50px;
+}
+
+
+@media screen and (max-width:550px) {
+    .card-heading{
+        font-size: 0 10px 5px 10px;
+        text-align: center;
+        padding: 10;
+    }
 }
