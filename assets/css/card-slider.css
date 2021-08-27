@@ -1,0 +1,245 @@
+/* Card styles */
+
+/* Card heading */
+.card-heading{
+    font-size: 20px;
+    padding: 0 35px 5px 50px;
+    color: var(--white);
+}
+
+
+/* Cards wrapper */
+.cards-wrapper{
+    display: inline-flex;
+    width: 100%;
+    padding: 20px 0;
+    overflow:none;
+    overflow-x: scroll;
+}
+
+.card-container{
+    margin: 5px;
+}
+
+.card-img-box{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.card-overlay{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 200px;
+    background-image: linear-gradient(to top,#192133,#192133,#192133e1,transparent,transparent);
+    visibility: hidden;
+}
+
+.card-overlay:hover{
+    visibility: visible;
+    transform: scale(1.011);
+}
+
+.card-img-box img:hover + .card-overlay{
+    visibility: visible;
+}
+
+.card-img-box:hover{
+    transform: scale(1.25);
+    transition: 500ms; 
+    z-index: 10; 
+}
+
+.card-img-box img{
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.ellipsis{
+    text-overflow: ellipsis;
+}
+
+.movie-db{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: var(--white);
+}
+
+.movie-db a{
+    color: var(--white);
+}
+
+.movie-name{
+    font-size: 11px;
+    margin: 2px 0;
+}
+
+.movie-info{
+    margin: 2px 0;
+    font-size: 10px;
+}
+
+.movie-desc{
+    margin: 2px 0;
+}
+
+.movie-watch a{
+    margin: 2px 0;
+}
+
+.movie-list{
+    margin: 2px 0;
+}
+
+.movie-list{
+    margin: 2px 0;
+}
+/* End of card styling */
+
+
+/* Video cards styles */
+.video-cards-wrapper{
+    display: inline-flex;
+    width: 100%;
+    padding: 20px 0;
+    overflow:none;
+    overflow-x: scroll;
+}
+
+.video-card-container{
+    margin: 5px;
+}
+
+.video-card-img-box{
+    position: relative;
+    width: 220px;
+    height: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.video-card-overlay{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 120px;
+    background-image: linear-gradient(to top,#192133,#192133,#192133e1,transparent,transparent);
+    visibility: hidden;
+}
+
+.video-card-overlay:hover{
+    visibility: visible;
+    transform: scale(1.011);
+}
+
+.video-card-img-box img:hover + .video-card-overlay{
+    visibility: visible;
+}
+
+.video-card-img-box:hover{
+    transform: scale(1.25);
+    transition: 500ms; 
+    z-index: 10; 
+}
+
+.video-card-img-box img{
+    width: 220px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.video-cards-wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.video-card-container:first-child{
+    margin-left: 50px;
+}
+
+.video-card-container:last-child{
+    margin-right: 50px;
+}
+
+
+.video-arrow-btn-container{
+    height:120px;
+    width: 30px;
+    top: 25px;
+    border: none;
+    background-color: #f5f7fa04;
+    color: #f5f7fa02;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    z-index: 90;
+    position: absolute;
+}
+
+.video-arrow-btn-container:hover{
+    background-color: #f5f7fa21;
+    color: var(--white);
+}
+
+/* Video cards styles end */
+
+
+/* Slider */
+
+.slider-container{
+  width: 98.5vw;
+  display: inline-flex;
+  position: relative;
+}
+
+.cards-wrapper-container{
+    width: 98.5vw;
+}
+
+.cards-wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.arrow-btn-container{
+    height:200px;
+    width: 30px;
+    top: 25px;
+    border: none;
+    background-color: #f5f7fa04;
+    color: #f5f7fa02;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    z-index: 200;
+    position: absolute;
+    z-index: 90;
+}
+
+.arrow-btn-container:hover{
+    background-color: #f5f7fa21;
+    color: var(--white);
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.card-container:first-child{
+    margin-left: 50px;
+}
+
+.card-container:last-child{
+    margin-right: 50px;
+}

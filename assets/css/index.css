@@ -136,6 +136,9 @@ a{
     display: none;
 }
 
+.header-spacer{
+    height: 80px;
+}
 
 /* List styling */
 
@@ -226,7 +229,7 @@ a{
 @media screen and (max-width:700px){
     .more-options{
         display: block;
-    }
+    } 
 
     .header-right-control{
         display: none;
@@ -236,6 +239,7 @@ a{
         padding: 0 20px;
     }
 }
+
 /* Header styles end */
 
 
@@ -354,3 +358,257 @@ a{
     }
 }
 /* Footer styles end */
+
+/* Banner styling */
+
+.mySlides {
+    display: none
+}
+
+.caro-left{
+    position: absolute; z-index: 10; top: 0; left: 0;
+}
+
+.caro-right{
+    position: absolute; z-index: 10; right: 0; top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+.banner-carousel-item{
+    position: relative;
+}
+
+.banner-container{
+    display: flex;
+} 
+
+.banner-height{
+    height: 400px;
+}
+
+.img-overlay{
+    position: absolute;
+    background-image: linear-gradient(to right,rgba(3, 11, 23, 0.95),rgba(3, 11, 23, 0.65),rgba(3, 11, 23, 0.25),rgba(3, 11, 23, 0.01));
+    width: 40px;
+    top: 0;
+}
+
+.banner-text{
+    flex: 4;
+    background-color: #030b17;
+    filter: opacity(0.9);
+}
+
+.banner-image{
+    flex: 6;
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+.text-overlay{
+    position: absolute;
+    top: 0;
+    width: 40%;
+    background-color: #030b17;
+    color: var(--white);
+}
+
+.banner-movie-text{
+    margin:80px 50px;
+}
+
+.banner-movie-name{
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.banner-movie-genere{
+    margin: 10px 0;
+    font-size: 27px;
+}
+
+.banner-movie-desc{
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.carousel-side-btn{
+    font-size: 50px;
+    background-color: rgba(0,0,0,0.01);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    color: rgba(255,255,255,0.1);
+}
+
+.carousel-side-btn:hover{
+    background-color: rgba(0,0,0,0.15);
+    color: rgba(255,255,255,1);
+}
+
+@media screen and (max-width:1024px) {
+    .banner-height{
+        height: 350px;
+    }   
+}
+
+@media screen and (max-width:768px) {
+    .banner-height{
+        height: 300px;
+    }   
+
+    .banner-movie-text{
+        margin:60px 50px;
+    }
+    
+    .banner-movie-name{
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    
+    .banner-movie-genere{
+        margin: 10px 0;
+        font-size: 25px;
+    }
+    
+    .banner-movie-desc{
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .banner-height{
+        height: 300px;
+    }   
+
+    .banner-movie-text{
+        margin:50px 30px;
+    }
+    
+    .banner-movie-name{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    
+    .banner-movie-genere{
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    
+    .banner-movie-desc{
+        margin: 10px 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .banner-height{
+        height: 250px;
+    }   
+
+    .text-overlay{
+        background-color: #030b1750;
+    }
+
+    .img-overlay{
+        display: none;
+    }
+    
+    .banner-text{
+        flex: 0;
+    }
+
+    .banner-image{
+        flex: 1;
+    }
+
+    .banner-movie-text{
+        margin:15px 10px;
+    }
+    
+    .banner-movie-name{
+        margin: 5px 0;
+        font-size: 18px;
+    }
+    
+    .banner-movie-genere{
+        margin: 5px 0;
+        font-size: 20px;
+    }
+    
+    .banner-movie-desc{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .banner-height{
+        height: 220px;
+    }   
+    
+    .banner-movie-text{
+        margin:10px 10px;
+    }
+    
+    .banner-movie-name{
+        font-size: 13px;
+    }
+    
+    .banner-movie-genere{
+        font-size: 14px;
+    }
+    
+    .banner-movie-desc{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .banner-movie-text{
+        margin:5px 5px;
+    }
+    
+    .banner-movie-name{
+        font-size: 13px;
+    }
+    
+    .banner-movie-genere{
+        font-size: 13px;
+    }
+    
+    .banner-movie-desc{
+        font-size: 13px;
+    }
+}
+/* Banner style end */
