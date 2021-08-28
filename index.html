@@ -20,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./assets/css/login-style.css"></link>
   </head>
   <body>
     <section>
@@ -221,7 +222,7 @@
                   <a class="btn-subscribe f-700" href=""> SUBSCRIBE </a>
                 </div>
                 <div class="nav-items lhs-spacer">
-                  <a class="btn-login f-500" href=""> LOGIN </a>
+                  <div class="btn-login f-500" href="" onclick="showLoginDialog(1)"> LOGIN </div>
                 </div>
               </div>
               <div class="nav-items lhs-spacer more-options">
@@ -553,10 +554,53 @@
         </div>
       </div>
     </section>
+
+    <section>
+        <div class="login-wrapper" id="login_dialog" onclick="showLoginDialog(0)"></div>
+        <div class="login-box" id="login_dialog_box">
+            <div class="login-content">
+                <div class="login-text f-500">
+                    Login to continue
+                </div>
+                <div class="login-quest-wrapper">
+                    <button class="login-quest f-500">
+                        Have a Facebook/Email account
+                    </button>
+                </div>
+                <div class="or-option f-500">
+                    or
+                </div>
+                <div class="login-input-wrapper f-500">
+                    <div class="login-input-container">
+                        <div class="login-input-number-code">
+                            +91
+                        </div>
+                        <div class="login-input-number-field">
+                            <input type="text" placeholder="Enter your mobile number" oninput="checkNum(event)">
+                        </div>
+                    </div>
+                    <div class="login-input-number-field-error-container f-300" id="error-text">
+                        <div class="login-input-number-field-error-text">
+                            Please enter valid mobile number
+                        </div>
+                        <div class="login-input-number-field-error-icon">
+                            <span class="fa fa-exclamation-triangle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="times-icons" onclick="showLoginDialog(0)">
+                &times;
+            </button>
+        </div>
+    </section>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
     <script src="./assets/js/card.js"></script>
     <script src="./assets/js/card-slider.js"></script>
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/borderColor.js"></script>
+    <script src="./assets/js/login.js"></script>
   </body>
 </html>
